@@ -1,0 +1,12 @@
+﻿<Properties StartupItem="FormsLibrary\FormsLibrary.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="FormsLibrary\View\SplashScreen.xaml">
+    <Files>
+      <File FileName="FormsLibrary\View\SplashScreen.xaml" Line="17" Column="17" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
