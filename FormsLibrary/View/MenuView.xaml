@@ -20,17 +20,17 @@
       <ColumnDefinition Width="*"/>
     </Grid.ColumnDefinitions>
 
-    <Button Grid.Row="0" Grid.Column="0" Text="Activité locale" Clicked="ButtonClicked1"/>
+    <Button Grid.Row="0" Grid.Column="0" BorderColor="Red" Text="Activitées" BackgroundColor="Red" Clicked="ButtonClicked1" Image="Image/bullseye.png" />
 
-    <Button Grid.Row="0" Grid.Column="1" Text="Itinéraire" Clicked="ButtonClicked3"/>
+    <Button Grid.Row="0" Grid.Column="1" BorderColor="Red" Text="Itinéraire" BackgroundColor="Red" Clicked="ButtonClicked3" Image="Image/map25.png"/>
 
-    <Button Grid.Row="1" Grid.Column="0" Text="Agenda" Clicked="ButtonClicked2"/>
+    <Button Grid.Row="1" Grid.Column="0" BorderColor="Red" Text="Agenda" BackgroundColor="Red" Clicked="ButtonClicked2" Image="Image/calendar52.png"/>
 
-    <Button Grid.Row="1" Grid.Column="1" Text="Météo" Clicked="ButtonClicked4"/>
+    <Button Grid.Row="1" Grid.Column="1" BorderColor="Red" Text="Météo" BackgroundColor="Red" Clicked="ButtonClicked4" Image="Image/sun32.png"/>
 
-    <Button Grid.Row="2" Grid.Column="0" Text="Blog" Clicked="ButtonClicked5"/>
+    <Button Grid.Row="2" Grid.Column="0" BorderColor="Red" Text="Blog" BackgroundColor="Red" Clicked="ButtonClicked5" Image="Image/pencil30.png"/>
 
-    <Button Grid.Row="2" Grid.Column="1" Text="Aller vers le site" Clicked="ButtonClicked6"/>    
+    <Button Grid.Row="2" Grid.Column="1" BorderColor="Red" Text="Aller vers le site" BackgroundColor="Red" Clicked="ButtonClicked6" Image="Image/chevron19.png"/>    
 
   </Grid>
 </ContentPage>

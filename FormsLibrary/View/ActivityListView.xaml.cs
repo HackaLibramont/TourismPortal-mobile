@@ -21,7 +21,23 @@ namespace FormsLibrary.View
         {
             try
             {
-                listView.ItemsSource = Context.InterestsList;
+                IList<Interests> tmp = Context.InterestsList;
+
+                if(App.Area == 1)
+                {
+                    tmp = tmp.Take(5).ToList();
+                }
+                else if(App.Area == 5)
+                {
+                    tmp = tmp.Take(10).ToList();
+                }
+                else if(App.Area == 10)
+                {
+                    tmp = tmp.Take(20).ToList();
+                }
+
+                listView.ItemsSource = tmp;
+
                 listView.ItemSelected += listView_ItemSelected;
             }
             catch

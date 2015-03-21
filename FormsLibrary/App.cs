@@ -12,9 +12,12 @@ namespace FormsLibrary
     {
         public static INavigation NavigationService {get; set;}
 
+        public static int Area { get; set; }
+
         public App()
         {
             MainPage = new NavigationPage(new SplashScreen());
+            Area = 10;
         }
 
         protected override void OnStart()

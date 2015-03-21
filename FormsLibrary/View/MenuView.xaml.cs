@@ -19,7 +19,8 @@ namespace FormsLibrary.View
             ToolbarItems.Add(new ToolbarItem
             {
                 Name = "Paramètres",
-                Order = ToolbarItemOrder.Primary,                
+                Order = ToolbarItemOrder.Primary,
+                Icon = new FileImageSource() { File = "Image/cog2.png" },
                 Command = new Command(() => Navigation.PushAsync(new SettingsView()))
             });
         }
@@ -52,7 +53,7 @@ namespace FormsLibrary.View
         public void ButtonClicked6(object sender, EventArgs ea)
         {
             //Go to external browser
-            Device.OpenUri(new Uri("http://www.google.com/"));
+            Device.OpenUri(new Uri("http://tourism-portal.be/"));
         }
 
         public void LaunchMapApp(Coordinates place)
