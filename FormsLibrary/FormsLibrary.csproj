@@ -47,6 +47,7 @@
     <Compile Include="Model\Media.cs" />
     <Compile Include="Model\Posts.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utils\ActionCommand.cs" />
     <Compile Include="Utils\DataHelper.cs" />
     <Compile Include="Utils\WebRequestHelper.cs" />
     <Compile Include="ViewModel\MenuViewModel.cs" />
@@ -54,6 +55,9 @@
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\ActivityListView.xaml.cs">
       <DependentUpon>ActivityListView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\BlogDetailsView.xaml.cs">
+      <DependentUpon>BlogDetailsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\BlogView.xaml.cs">
       <DependentUpon>BlogView.xaml</DependentUpon>
@@ -63,6 +67,9 @@
     </Compile>
     <Compile Include="View\DetailsView.xaml.cs">
       <DependentUpon>DetailsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\InterestDetailsView.xaml.cs">
+      <DependentUpon>InterestDetailsView.xaml</DependentUpon>
     </Compile>
     <Compile Include="View\MenuView.xaml.cs">
       <DependentUpon>MenuView.xaml</DependentUpon>
@@ -150,6 +157,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="View\SettingsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\InterestDetailsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="View\BlogDetailsView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

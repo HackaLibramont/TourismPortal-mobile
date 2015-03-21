@@ -1,8 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FormsLibrary.View.CalendarView" BackgroundColor="Green">
-  
-  
-  
+             x:Class="FormsLibrary.View.CalendarView" >
+
+  <ListView x:Name="listView">
+    <ListView.ItemTemplate>
+      <DataTemplate>
+        <ViewCell>
+          <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+            <StackLayout Padding="5,10,0,10" VerticalOptions="StartAndExpand" Orientation="Vertical">
+              <Label Text="{Binding Title}" YAlign="Center" FontSize="Medium" />
+              <Label Text="{Binding Start_time}" YAlign="Center" FontSize="Medium" />
+            </StackLayout>            
+          </StackLayout>
+        </ViewCell>
+      </DataTemplate>
+    </ListView.ItemTemplate>
+  </ListView>  
 </ContentPage>

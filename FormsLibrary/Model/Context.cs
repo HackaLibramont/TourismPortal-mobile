@@ -13,7 +13,5 @@ namespace FormsLibrary.Model
         public static IList<Posts> PostsList { get; set; }
         public static IList<Categorie> CategoriesList { get; set; }
         public static IList<Interests> InterestsList { get; set; }
-
-
     }
 }

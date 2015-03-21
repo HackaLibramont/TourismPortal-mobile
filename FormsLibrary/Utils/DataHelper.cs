@@ -98,11 +98,11 @@ namespace FormsLibrary.Utils
 
                 string json = await WebRequestHelper.httpRequestGetString(client);
 
-                json = @"[{id: 1,      name: ""chez Nous  "",      description: ""chez Nous on se fout pas de vous."",      address: ""rue des déportés 17"",
-                         zip: 6700,      mobile: ""0498685687"",phone: ""063223363"",      email: ""cedric@studio-sept.be"",      website: ""http://www.studio-sept.be"",
-                         coordinates:  { latitude: 5.34,longitude: 55.22},category: {id: 1,label: ""Hébergement""},city: {zip: 6700,city: ""Arlon"", coordinates: { latitude: 5.5,longitude: 55.5}},
-                         criteria: [{id: 1,label: ""On parle chinois""}],pictures: [{url: ""http://pivotmedia.tourismewallonie.be/pivot/ANX-09-000JYS/ANX-09-000JYS.JPG""}],
-                         videos: [{url: ""http://foo.com/video.mp3""}]}]";
+//                string json = @"[{id: 1,      name: ""chez Nous  "",      description: ""chez Nous on se fout pas de vous."",      address: ""rue des déportés 17"",
+//                         zip: 6700,      mobile: ""0498685687"",phone: ""063223363"",      email: ""cedric@studio-sept.be"",      website: ""http://www.studio-sept.be"",
+//                         coordinates:  { latitude: 5.34,longitude: 55.22},category: {id: 1,label: ""Hébergement""},city: {zip: 6700,city: ""Arlon"", coordinates: { latitude: 5.5,longitude: 55.5}},
+//                         criteria: [{id: 1,label: ""On parle chinois""}],pictures: [{url: ""http://pivotmedia.tourismewallonie.be/pivot/ANX-09-000JYS/ANX-09-000JYS.JPG""}],
+//                         videos: [{url: ""http://foo.com/video.mp3""}]}]";
 
 
                 IList<FormsLibrary.Model.Interests> interestList = JsonConvert.DeserializeObject<IList<FormsLibrary.Model.Interests>>(json);
@@ -122,8 +122,8 @@ namespace FormsLibrary.Utils
 
                 string json = await WebRequestHelper.httpRequestGetString(client);
 
-                IList<FormsLibrary.Model.Categorie> interestList = JsonConvert.DeserializeObject<IList<FormsLibrary.Model.Categorie>>(json);
-                Context.CategoriesList = interestList;
+                IList<FormsLibrary.Model.Interests> interestList = JsonConvert.DeserializeObject<IList<FormsLibrary.Model.Interests>>(json);
+                Context.InterestsList = interestList;
             }
             catch
             {

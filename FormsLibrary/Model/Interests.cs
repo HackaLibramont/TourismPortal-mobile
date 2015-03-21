@@ -25,7 +25,7 @@ namespace FormsLibrary.Model
         public string Address { get; set; }
 
         [JsonProperty("zip")]
-        public int Zip { get; set; }
+        public int? Zip { get; set; }
 
         [JsonProperty("mobile")]
         public string Mobile { get; set; }

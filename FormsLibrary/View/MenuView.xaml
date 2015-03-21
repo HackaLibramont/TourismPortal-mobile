@@ -22,9 +22,9 @@
 
     <Button Grid.Row="0" Grid.Column="0" Text="Activité locale" Clicked="ButtonClicked1"/>
 
-    <Button Grid.Row="0" Grid.Column="1" Text="Itinéraire" Clicked="ButtonClicked2"/>
+    <Button Grid.Row="0" Grid.Column="1" Text="Itinéraire" Clicked="ButtonClicked3"/>
 
-    <Button Grid.Row="1" Grid.Column="0" Text="Agenda" Clicked="ButtonClicked3"/>
+    <Button Grid.Row="1" Grid.Column="0" Text="Agenda" Clicked="ButtonClicked2"/>
 
     <Button Grid.Row="1" Grid.Column="1" Text="Météo" Clicked="ButtonClicked4"/>
 

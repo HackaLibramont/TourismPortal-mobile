@@ -13,10 +13,10 @@ namespace FormsLibrary.Model
         { }
 
         [JsonProperty("latitude")]
-        public float Lat {get; set;}
+        public float? Lat {get; set;}
 
         [JsonProperty("longitude")]
-        public float Long {get; set;}
+        public float? Long {get; set;}
 
     }
 }

@@ -1,6 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="FormsLibrary.View.RoadMapView" BackgroundColor="Silver">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+             x:Class="FormsLibrary.View.RoadMapView">
+
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="auto"/>
+      <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+
+    <Image Grid.Row="0" Source="Image/Splash.png" />
+
+    <ListView Grid.Row="1" x:Name="listView">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <StackLayout HorizontalOptions="StartAndExpand" Orientation="Horizontal">
+              <StackLayout Padding="5,10,0,10" VerticalOptions="StartAndExpand" Orientation="Vertical">
+                <Label Text="{Binding Name}" YAlign="Center" FontSize="Medium" />
+                <Label Text="{Binding Phone}" VerticalOptions="Center" HorizontalOptions="Center" />
+                <Label Text="{Binding Email}" VerticalOptions="Center" HorizontalOptions="Center" />
+              </StackLayout>
+            </StackLayout>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </Grid>
+  
 </ContentPage>

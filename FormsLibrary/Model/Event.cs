@@ -1,17 +1,20 @@
-﻿using Newtonsoft.Json;
+﻿using FormsLibrary.Utils;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace FormsLibrary.Model
 {
     public class Events
-    {
+    {      
+
         public Events()
-        { }
+        {}
 
         [JsonProperty("id")]
         public int Id {get; set;}
@@ -43,10 +46,8 @@ namespace FormsLibrary.Model
         [JsonProperty("city")]
         public string City {get; set;}
 
-
-
-        //[JsonProperty("coordinates")]
-        //public Coordinates Coordinates { get; set; }
+        [JsonProperty("coordinates")]
+        public Coordinates Coordinates { get; set; }
 
     }
 }

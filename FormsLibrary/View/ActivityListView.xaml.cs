@@ -22,6 +22,21 @@ namespace FormsLibrary.View
             try
             {
                 listView.ItemsSource = Context.InterestsList;
+                listView.ItemSelected += listView_ItemSelected;
+            }
+            catch
+            {
+
+            }
+        }
+
+        private async void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
+            try
+            {
+                Interests ev = e.SelectedItem as Interests;
+                if (ev != null)
+                    await Navigation.PushAsync(new NavigationPage(new InterestDetailsView(ev.Id)));
             }
             catch
             {
